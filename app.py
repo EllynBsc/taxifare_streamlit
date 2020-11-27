@@ -12,8 +12,8 @@ This front queries the [taxi fare model](https://taxifaremodelapi.herokuapp.com/
 '''
 
 key = '2012-10-06 12:10:20.0000001'
-pickup_date = st.date_input('pickup datetime', value=datetime.datetime(2012, 10, 6, 12, 10, 20))
-pickup_time = st.time_input('pickup datetime', value=datetime.datetime(2012, 10, 6, 12, 10, 20))
+pickup_date = st.date_input('pickup datetime', value=datetime.datetime.now())
+pickup_time = st.time_input('pickup datetime', value=datetime.datetime.now())
 pickup_datetime = f'{pickup_date} {pickup_time}UTC'
 pickup_longitude = st.number_input('pickup longitude', value=40.7614327)
 pickup_latitude = st.number_input('pickup latitude', value=-73.9798156)
