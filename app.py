@@ -52,6 +52,8 @@ prediction = response.json()
 
 pred = prediction['prediction']
 
+
+html_string = "Your course fare prediction in $:"
+
+st.title(html_string)
 pred
-
-
